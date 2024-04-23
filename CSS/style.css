@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+.img {
+    height:100%;
+    width: auto;
+}
+h1, h2, h3, h4, h5, h6, p, a {
+    color: white;
+}
+
+body {
+    background-color: black;
+}
+
+.container {
+    width: 1240px;
+    margin: 0 auto;
+}
+
+/* HEADER */
+.logo {
+    color: white;
+    font-family: "Jersey 25", sans-serif;
+    /* font-family: "Tac One", sans-serif; */
+    font-weight: 400;
+    font-style: normal;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 50px;
+    border-bottom: 2px #18D9C5 solid;
+    padding: 40px;
+    
+}
+header a {
+    text-decoration: none;
+    color: white;
+    
+}
+
+.CTA-connect a {
+    border: 1px #F53F7B solid;
+    border-radius: 5px;
+    padding: 10px;
+    
+}
+
+/* zone flotaison */
+
+.blue-border {
+    border: 2px #18D9C5 solid;
+    border-radius: 10px;
+}
+.daily-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.daily-riddle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: auto;
+    min-height: 60vh;
+    padding:20px
+}
+
+.answer-daily {
+    background-color: rgb(65, 65, 65);
+}
+.valid-daily, .answer-daily {
+    padding:5px 10px
+}
+
+.nav {
+    
+    margin-left: 40px;
+}
+aside {
+    text-align: center;
+    line-height: 4;
+    background-color: #025e7380;
+
+}
+aside a {
+    text-decoration: none;
+    padding: 10px;
+    background-color: rgba(19, 19, 19, 0.178);
+    border-radius: 5px;
+    border: 2px #18d9c65e solid;
+}
