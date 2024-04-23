@@ -1,14 +1,15 @@
 * {
     margin: 0;
-    padding:0;
+    padding: 0;
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;
 }
 
 .img {
-    height:100%;
+    height: 100%;
     width: auto;
 }
+
 h1, h2, h3, h4, h5, h6, p, a {
     color: white;
 }
@@ -26,7 +27,6 @@ body {
 .logo {
     color: white;
     font-family: "Jersey 25", sans-serif;
-    /* font-family: "Tac One", sans-serif; */
     font-weight: 400;
     font-style: normal;
 }
@@ -35,35 +35,48 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 15px 50px;
     border-bottom: 2px #18D9C5 solid;
-    padding: 40px;
-    
+    padding: 40px 100px;
+
 }
+
 header a {
     text-decoration: none;
     color: white;
-    
+
 }
 
 .CTA-connect a {
     border: 1px #F53F7B solid;
     border-radius: 5px;
+    box-shadow: 0px 0px 15px #F53F7B;
     padding: 10px;
-    
+    background-color: #F53F7B;
+    color: black;
 }
+
+.CTA-connect :first-child {
+    margin-right: 10px;
+}
+
 
 /* zone flotaison */
 
 .blue-border {
-    border: 2px #18D9C5 solid;
+
+    border: 1px #e7e7e7 solid;
+    /* box-shadow: rgb(24, 217, 198) 6px 0px 49px 0px inset, rgba(19, 31, 29, 0.5) 6px 0px 49px 0px inset; */
+    box-shadow: rgb(207, 216, 215) 6px 0px 49px 0px inset, rgba(26, 26, 26, 0.5) 6px 0px 49px 0px inset;
     border-radius: 10px;
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset; */
 }
+
 .daily-wrapper {
     display: flex;
     justify-content: space-between;
     margin-top: 50px;
 }
+
 .daily-riddle {
     display: flex;
     flex-direction: column;
@@ -71,30 +84,42 @@ header a {
     justify-content: space-between;
     width: auto;
     min-height: 60vh;
-    padding:20px
+    padding: 40px;
+
+    /* box-shadow: rgb(24, 217, 198) 6px 0px 49px 0px inset, rgba(19, 31, 29, 0.5) 6px 0px 49px 0px inset; */
+    box-shadow: rgb(207, 216, 215) 6px 0px 49px 0px inset, rgba(26, 26, 26, 0.5) 6px 0px 49px 0px inset;
+    border-radius: 10px;
 }
 
 .answer-daily {
     background-color: rgb(65, 65, 65);
 }
+
 .valid-daily, .answer-daily {
-    padding:5px 10px
+    padding: 5px 10px
 }
 
 .nav {
-    
+    border: 1px rgb(24, 217, 197) solid;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px #18D9C5;
     margin-left: 40px;
-}
-aside {
+    height: fit-content;
     text-align: center;
-    line-height: 4;
-    background-color: #025e7380;
+    line-height: 5;
+    background-color: rgba(2, 94, 115, 0.502);
 
+    border: 2px rgb(24, 217, 197) solid;
+    box-shadow: rgb(24, 217, 198) 0px 0px 33px 4px inset;
+    padding: 5px;
 }
+
 aside a {
     text-decoration: none;
     padding: 10px;
     background-color: rgba(19, 19, 19, 0.178);
     border-radius: 5px;
     border: 2px #18d9c65e solid;
+
+    box-shadow: 0px 0px 11px 2px rgb(24, 217, 198), 0px 0px 10px 15px rgba(19, 31, 29, 0.5);
 }
