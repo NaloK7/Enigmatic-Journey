@@ -15,7 +15,7 @@ h1, h2, h3, h4, h5, h6, p, a {
 }
 
 body {
-    background-color: white;
+    background-image: url("/img/bkg-main-light_x1.5.png");
 }
 
 .container {
@@ -31,15 +31,40 @@ body {
     font-style: normal;
 }
 
-header {
+.header-top {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 2px #18D9C5 solid;
     padding: 40px 100px;
+}
+.header-bottom {
+    display: flex;
+
 
 }
+.header-top-line {
+    width: 30vw;
+    height: 50px;
+    border-top: 2px #18D9C5 solid;
+}
+.header-bottom-line {
+    width: 40vw;
+    border-bottom: 2px #18D9C5 solid;
+}
 
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+nav a {
+    width: 76px;
+    padding: 10px 10px;
+    border-radius: 15px;
+    background-color: #18d9c65e;
+    text-align: center;
+}
 header a {
     text-decoration: none;
     color: black;
@@ -100,27 +125,3 @@ header a {
     padding: 5px 10px
 }
 
-.nav {
-    border: 1px rgb(24, 217, 197) solid;
-    border-radius: 10px;
-    box-shadow: 0px 0px 15px #18D9C5;
-    margin-left: 40px;
-    height: fit-content;
-    text-align: center;
-    line-height: 5;
-    background-color: rgba(2, 94, 115, 0.502);
-
-    border: 2px rgb(24, 217, 197) solid;
-    box-shadow: rgb(24, 217, 198) 0px 0px 33px 4px inset;
-    padding: 5px;
-}
-
-aside a {
-    text-decoration: none;
-    padding: 10px;
-    background-color: rgba(19, 19, 19, 0.178);
-    border-radius: 5px;
-    border: 2px #18d9c65e solid;
-    color: white;
-    box-shadow: 0px 0px 11px 2px rgb(24, 217, 198), 0px 0px 10px 15px rgba(19, 31, 29, 0.5);
-}
