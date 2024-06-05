@@ -15,162 +15,36 @@ h1, h2, h3, h4, h5, h6, p, a {
 }
 
 body {
-    background-image: url("/img/bkg-main-light.svg");
-    background-size: cover;
-    overflow: hidden;
+    background-image: url("/img/BKG-light_1920.svg");
+    background-position: center top;
 }
 
 .container {
-    width: 1240px;
+    width: 1820px;
     margin: 0 auto;
+}
+.flex {
+    display: flex;
 }
 
 /* HEADER */
-.logo {
-    color: black;
-    font-family: "Jersey 25", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
 
-/* header { */
-    /* width: 100%;
-    height: 181px; */
-    /* important background blur */
-    /* background: linear-gradient(90deg,
-            rgba(218, 218, 218, 0.247), 10%,
-            rgba(219, 219, 219, 0.85), 90%,
-            rgba(218, 218, 218, 0.247));
-    backdrop-filter: blur(5px); */
-    /* border: 1px solid linear-gradient(#f53f7c00,10%, #F53F7B,90%,#f53f7c00); */
-    /* border-bottom: 1px solid #F53F7B;
-    border-color: linear-gradient(rgba(245, 63, 124, 0.1),10%, rgb(245, 63, 123),90%,rgba(245, 63, 124, 0.1)); */
-    /* -webkit-backdrop-filter: blur(5px); */
-    /* filter: blur(5px); */
-/* } */
-
-.red-line {
-    width: 100%;
-    height: 4px;
-    background: linear-gradient(90deg, rgb(81, 20, 40), 20%, rgb(245, 63, 123), 80%, rgb(81, 20, 40));
-}
-
-/* HEADER IMAGE CENTER RESPONSIVE OVERFLOW 
+/* HEADER IMAGE CENTER RESPONSIVE OVERFLOW */
 header {
-    width: 1440px;
-    height: 180px;
-    background-image: url("/img/header-bkg-light.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    overflow: hidden;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-   
-} */
-.header-top {
-    display: flex;
-    align-items: center;
+  height: 180px;
+  background-image: url("../img/header_bkg_1920.png");
+  background-position: center;
+}
+
+div.header-top {
+    height: 104px;
     justify-content: space-between;
-    padding: 40px 100px;
 }
 
-.header-bottom {
-    display: flex;
-
-
-}
-
-
-nav {
-    display: flex;
-    justify-content: space-evenly;
+div.header-top *{
     align-items: center;
 }
 
-nav a {
-    width: 76px;
-    padding: 10px 10px;
-    border-radius: 15px;
-    background-color: #18d9c65e;
-    text-align: center;
-}
-
-header a {
-    text-decoration: none;
-    color: black;
-
-}
-
-.CTA-connect a {
-    border: 1px #F53F7B solid;
-    border-radius: 5px;
-    box-shadow: 0px 0px 15px #F53F7B;
-    padding: 10px;
-    background-color: #F53F7B;
-    color: white;
-}
-
-.CTA-connect :first-child {
-    margin-right: 10px;
-}
-
-
-/* zone flotaison */
-
-.blue-border {
-
-    border: 1px #e7e7e7 solid;
-    /* box-shadow: rgb(24, 217, 198) 6px 0px 49px 0px inset, rgba(19, 31, 29, 0.5) 6px 0px 49px 0px inset; */
-    box-shadow: rgb(207, 216, 215) 6px 0px 49px 0px inset, rgba(26, 26, 26, 0.5) 6px 0px 49px 0px inset;
-    border-radius: 10px;
-    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset; */
-}
-
-.daily-wrapper {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 50px;
-}
-
-.daily-riddle {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    width: auto;
-    min-height: 60vh;
-    padding: 40px;
-
-    /* box-shadow: rgb(24, 217, 198) 6px 0px 49px 0px inset, rgba(19, 31, 29, 0.5) 6px 0px 49px 0px inset; */
-    /* box-shadow: rgb(207, 216, 215) 6px 0px 49px 0px inset, rgba(26, 26, 26, 0.5) 6px 0px 49px 0px inset; */
-    box-shadow: rgb(34, 34, 34) 6px 0px 49px 0px inset, rgb(0, 0, 0) 6px 0px 49px 0px inset;
-    border-radius: 10px;
-}
-
-.answer-daily {
-    background-color: rgb(65, 65, 65);
-}
-
-.valid-daily, .answer-daily {
-    padding: 5px 10px
-}
-
-body {
-    background-image: url('../img/BKG-light_1920.svg');
-    height: 100%;
-    width: 100%
-
-}
-#header-img {
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-}
-#svg-container {
-    margin:50px;
-}
-
-#blur-circle {
-    /* backdrop-filter: blur(5px); */
+#icon-account {
+    width: 26px;
 }
