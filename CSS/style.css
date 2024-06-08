@@ -1,50 +1,125 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", "Audiowide", sans-serif;
+  max-width: 1920px;
 }
 
 .img {
-    height: 100%;
-    width: auto;
+  height: 100%;
+  width: auto;
 }
 
-h1, h2, h3, h4, h5, h6, p, a {
-    color: black;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+  color: black;
 }
 
 body {
-    background-image: url("/img/BKG-light_1920.svg");
-    background-position: center top;
+  background-image: url("/img/BKG-light_1920.svg");
+  background-repeat: no-repeat;
+  min-width: 1920px;
+  background-position: center top;
+}
+
+/* select all child of main */
+main > * {
+    margin-top: 40px;
 }
 
 .container {
-    width: 1820px;
-    margin: 0 auto;
+  width: 1820px;
+  margin: 0 auto;
 }
+
 .flex {
-    display: flex;
+  display: flex;
 }
 
 /* HEADER */
 
 /* HEADER IMAGE CENTER RESPONSIVE OVERFLOW */
 header {
+  min-width: 1920px;
   height: 180px;
   background-image: url("../img/header_bkg_1920.png");
-  background-position: center;
+  background-repeat: no-repeat;
+  background-position: center top;
 }
 
 div.header-top {
-    height: 104px;
-    justify-content: space-between;
+  height: 104px;
+  justify-content: space-between;
 }
 
-div.header-top *{
-    align-items: center;
+div.header-top * {
+  align-items: center;
 }
 
 #icon-account {
-    width: 26px;
+  width: 26px;
+}
+
+/* MAIN */
+
+/* riddle bkg */
+.glass {
+  background: linear-gradient(
+    90deg,
+    rgba(203, 207, 220, 0) 0%,
+    rgba(217, 217, 217, 0.8) 20%,
+    rgba(217, 217, 217, 0.8) 80%,
+    rgba(203, 207, 220, 0) 100%
+  );
+  backdrop-filter: blur(10px);
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  padding: 40px;
+}
+
+.riddle {
+    margin: 0 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hole {
+    height: 700px;
+    width: 20px;
+    border-radius: 10px;
+    /* background-image: url("/img/BKG-light_1920.svg"); */
+}
+
+.riddle-title {
+  font-family: "Audiowide";
+  padding: 40px;
+}
+
+.riddle-txt {
+  padding: 40px;
+}
+
+.glass footer {
+  display: flex;
+  align-items: center;
+
+  margin-top: 40px;
+  height: 120px;
+}
+
+.glass footer p {
+  margin: 0 auto;
 }
