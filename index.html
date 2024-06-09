@@ -16,21 +16,28 @@
 
 <body>
   <header>
-    <div class="container">
-      <div class="header-top flex ">
-        <a class="logo-img flex" href="#">
-          <img src="./img/logo-img.svg" alt="logo" class="d-flex align-items-center">
-        </a>
-        <img class="flex" src="./img/account-icon.svg" alt="menu icon" id="icon-account">
-      </div>
+
+    <div class="header-top flex ">
+      <a class="logo-img flex" href="#">
+        <img src="./img/logo-img.svg" alt="logo" class="d-flex align-items-center">
+      </a>
+      <a href="#" class="flex" id="logo-title">Enigmatic Journey </a>
+      <img class="flex" src="./img/account-icon.svg" alt="menu icon" id="icon-account">
     </div>
+    <nav class="">
+      <a href="#" class="book-btn">Livre I</a>
+      <a href="#" class="book-btn">Livre II</a>
+      <a href="#" class="book-btn">Livre III</a>
+      <a href="#" class="book-btn">Livre IV</a>
+    </nav>
+
   </header>
 
   <main>
-    <section class="glass ">
-      <div class="hole mask" id="left-hole">
+    <section class="glass">
+      <!-- <div class="hole mask" id="left-hole">
         <img src="./img/BKG-light_1920.svg" class="holed-img-l" alt="">
-      </div>
+      </div> -->
 
       <div class="riddle">
         <h2 class="riddle-title">L'énigme d'Einstein</h2>
@@ -62,9 +69,9 @@
           D'après lui, seule 2% de la population serait capable de résoudre cette énigme.
         </p>
       </div>
-      <div class="hole mask" id="right-hole">
+      <!-- <div class="hole mask" id="right-hole">
         <img src="./img/BKG-light_1920.svg" class="holed-img-r" alt="">
-      </div>
+      </div> -->
     </section>
     <!-- <iframe src="https://www.desmos.com/scientific" style="border : 1px solid #ccc" width="450px" height="400px" frameborder="0"></iframe> -->
     <footer class="glass">
@@ -74,7 +81,7 @@
 
   <!-- GET THE ORIGIN POINT OF THE HOLE -->
   <!-- USE THIS TO OFFSET THE IMAGES UNDER THE MASKS -->
-  <script>
+  <!-- <script>
     document.addEventListener('DOMContentLoaded', (event) => {
         var div = document.querySelector('#left-hole');
         var rect = div.getBoundingClientRect();
@@ -89,7 +96,7 @@
         console.log("Top: " + Math.round(rect.top));
         console.log("Left: " + Math.round(rect.left));
     });
-</script>
+</script> -->
 </body>
 
 </html>
