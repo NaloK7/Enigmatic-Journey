@@ -34,10 +34,11 @@
   </header>
 
   <main>
-    <section class="glass">
-      <!-- <div class="hole mask" id="left-hole">
-        <img src="./img/BKG-light_1920.svg" class="holed-img-l" alt="">
-      </div> -->
+    <div class="depth-glass"></div>
+    <section class="glass" id="riddle-glass">
+      <div class="hole" id="left-hole">
+
+      </div>
 
       <div class="riddle">
         <h2 class="riddle-title">L'énigme d'Einstein</h2>
@@ -69,11 +70,12 @@
           D'après lui, seule 2% de la population serait capable de résoudre cette énigme.
         </p>
       </div>
-      <!-- <div class="hole mask" id="right-hole">
-        <img src="./img/BKG-light_1920.svg" class="holed-img-r" alt="">
-      </div> -->
+      <div class="hole mask" id="right-hole">
+
+      </div>
     </section>
     <!-- <iframe src="https://www.desmos.com/scientific" style="border : 1px solid #ccc" width="450px" height="400px" frameborder="0"></iframe> -->
+    <div class="depth-glass"></div>
     <footer class="glass">
       <p>footer</p>
     </footer>
@@ -81,22 +83,41 @@
 
   <!-- GET THE ORIGIN POINT OF THE HOLE -->
   <!-- USE THIS TO OFFSET THE IMAGES UNDER THE MASKS -->
-  <!-- <script>
-    document.addEventListener('DOMContentLoaded', (event) => {
-        var div = document.querySelector('#left-hole');
-        var rect = div.getBoundingClientRect();
-        console.log("LEFT HOLE:");
-        console.log("Top: " + Math.round(rect.top));
-        console.log("Left: " + Math.round(rect.left));
-    });
-    document.addEventListener('DOMContentLoaded', (event) => {
-        var div = document.querySelector('#right-hole');
-        var rect = div.getBoundingClientRect();
-        console.log("RIGHT HOLE:");
-        console.log("Top: " + Math.round(rect.top));
-        console.log("Left: " + Math.round(rect.left));
-    });
-</script> -->
+  <script>
+
+
+    let left = document.querySelector('#left-hole');
+    let leftrect = left.getBoundingClientRect();
+    let lefttop = Math.round(leftrect.top)
+    let leftleft = Math.round(leftrect.left)
+
+    let glass = document.querySelector('#riddle-glass');
+    let glassrect = glass.getBoundingClientRect();
+    let glasstop = Math.round(glassrect.top)
+    let glassleft = Math.round(glassrect.left)
+
+    window.onload = function () {
+      console.log("hole LT " + lefttop);
+      console.log("hole LL " + leftleft);
+
+      console.log("glass LT " + glasstop);
+      console.log("glass LL " + glassleft);
+    };
+
+    // Change values when window is resized
+    window.onresize = function () {
+      let leftrect = left.getBoundingClientRect();
+      let lefttop = Math.round(leftrect.top)
+      let leftleft = Math.round(leftrect.left)
+      console.log(lefttop);
+      console.log(leftleft);
+    };
+
+    // height of glass
+    // var clientHeight = document.querySelector('.glass').clientHeight;
+    // console.log(clientHeight);
+
+  </script>
 </body>
 
 </html>

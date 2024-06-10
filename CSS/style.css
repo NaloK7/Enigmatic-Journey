@@ -3,6 +3,8 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto", "Audiowide", sans-serif;
+  --main-green: #17ae9f;
+  --main-pink: #ff4180;
 }
 
 .img {
@@ -25,15 +27,12 @@ a {
 }
 
 body {
-  background-image: url("/img/BKG-light_1920.svg");
+  background-image: url("/img/BKG-light_1920v2.svg");
   background-repeat: no-repeat;
   background-position: center top;
 }
 
 /* select all child of main */
-main > * {
-  margin-top: 40px;
-}
 
 .container {
   min-width: 1820px;
@@ -48,10 +47,10 @@ main > * {
 
 /* HEADER IMAGE CENTER RESPONSIVE OVERFLOW */
 header {
-  background-image: url("../img/header_bkg_1920.png");
+  background-image: url("../img/header_bkg_1920v2.png");
   background-repeat: no-repeat;
   background-position: center top;
-  height: 180px;
+  height: 186px;
   padding: 0 40px;
 }
 
@@ -97,7 +96,12 @@ nav a {
 }
 
 /* MAIN */
-
+.depth-glass {
+  height: 5px;
+  backdrop-filter: blur(10px);
+  margin-top: 40px;
+  /* border: 5px solid #727272; */
+}
 /* riddle bkg */
 .glass {
   background: linear-gradient(
@@ -114,7 +118,7 @@ nav a {
   align-items: center;
   justify-content: center;
 
-  padding: 40px;
+  padding: 40px 0;
 }
 
 .riddle {
@@ -124,31 +128,33 @@ nav a {
   justify-content: center;
   align-items: center;
 }
-
+/* HOLE TO SEE BACKGROUND */
 .hole {
-  height: 700px;
+  /* hole shape */
+  height: calc(828px - 80px);
+  /* height: 100%; */
   width: 20px;
+  /* padding: 20% 10px; */
   border-radius: 10px;
+  background-image: url("../img/BKG-light_1920v2.svg");
+  /* set relative position to display img inside properly */
   position: relative;
+  /* prevent img to resize the screen */
   overflow: hidden;
+}
 
-  /* FORME DE DECOUPE */
-  clip-path: xywh(0px 0px 100% 100% round 10px);
+#left-hole {
+  background-position: -452px -284px;
 }
-.holed-img-l {
-  position: absolute;
-  top: -281px;
-  left: -457px;
+#right-hole {
+  background-position: -1441px -284px;
 }
-.holed-img-r {
-  position: absolute;
-  top: -281px;
-  left: -1441px;
-}
+/* END HOLE */
 
 .riddle-title {
   font-family: "Audiowide";
   padding: 40px;
+  color: #ff4180;
 }
 
 .riddle-txt {
@@ -166,7 +172,3 @@ nav a {
 .glass footer p {
   margin: 0 auto;
 }
-
-/* main, header, .glass, .hole, body {
-  position: relative;
-} */
